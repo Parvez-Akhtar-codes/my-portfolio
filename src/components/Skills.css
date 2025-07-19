@@ -1,0 +1,142 @@
+.about {
+  padding: 3rem 0;
+  background-color: var(--background);
+  width: 100%;
+  overflow: visible;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem 1rem 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.section-title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  text-align: center;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  opacity: 0.8;
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  color: #1f2937;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.skill-tag:hover {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  border-color: rgba(59, 130, 246, 0.4);
+  color: #1e40af;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 0;
+  }
+  
+  .about-content {
+    padding: 0 1rem 0.5rem 1rem;
+  }
+  
+  .section-title {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .skills-categories {
+    gap: 1rem;
+  }
+  
+  .category-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skills-row {
+    gap: 0.4rem;
+  }
+  
+  .skill-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 1.5rem 0;
+  }
+  
+  .about-content {
+    padding: 0 0.75rem 0.25rem 0.75rem;
+  }
+  
+  .section-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  .skills-categories {
+    gap: 0.75rem;
+  }
+  
+  .category-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .skills-row {
+    gap: 0.3rem;
+  }
+  
+  .skill-tag {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 12px;
+  }
+}
