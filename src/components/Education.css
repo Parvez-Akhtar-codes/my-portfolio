@@ -1,5 +1,5 @@
 .education {
-  padding: 3rem 0;
+  padding: 6rem 0 3rem 0;
   background: var(--background);
   position: relative;
 }
@@ -113,7 +113,7 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .education {
-    padding: 2rem 0;
+    padding: 5rem 0 2rem 0;
   }
   
   .education .container {
@@ -183,7 +183,7 @@
 
 @media (max-width: 480px) {
   .education {
-    padding: 1.5rem 0;
+    padding: 4rem 0 2rem 0;
   }
   
   .education .container {

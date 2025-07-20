@@ -1,5 +1,5 @@
 .experience {
-  padding: 3rem 0;
+  padding: 6rem 0 3rem 0;
   background: var(--background);
   position: relative;
 }
@@ -113,7 +113,7 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .experience {
-    padding: 2rem 0;
+    padding: 5rem 0 2rem 0;
   }
   
   .experience .container {
@@ -183,7 +183,7 @@
 
 @media (max-width: 480px) {
   .experience {
-    padding: 1.5rem 0;
+    padding: 4rem 0 2rem 0;
   }
   
   .experience .container {

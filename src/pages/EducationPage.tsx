@@ -4,9 +4,11 @@ import Footer from '../components/Footer'
 
 const EducationPage = () => {
   return (
-    <div className="page">
+    <div className="app">
       <Navbar />
-      <Education />
+      <main>
+        <Education />
+      </main>
       <Footer />
     </div>
   )

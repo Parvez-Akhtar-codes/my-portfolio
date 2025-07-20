@@ -4,9 +4,11 @@ import Footer from '../components/Footer'
 
 const ExperiencePage = () => {
   return (
-    <div className="page">
+    <div className="app">
       <Navbar />
-      <Experience />
+      <main>
+        <Experience />
+      </main>
       <Footer />
     </div>
   )

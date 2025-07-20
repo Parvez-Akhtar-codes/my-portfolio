@@ -20,40 +20,23 @@ const Navbar = () => {
         <div className="navbar-content">
           <div className="navbar-left">
             <Link to="/" className="navbar-link" title="Home">
-              🏠
+              <img src="/icons/home.png" alt="Home" className="navbar-icon" />
             </Link>
             <Link to="/skills" className="navbar-link" title="Skills">
-              ⚡
+              <img src="/icons/skills.png" alt="Skills" className="navbar-icon" />
             </Link>
             <Link to="/projects" className="navbar-link" title="Projects">
-              💻
+              <img src="/icons/projects.png" alt="Projects" className="navbar-icon" />
             </Link>
             <Link to="/education" className="navbar-link" title="Education">
-              🎓
+              <img src="/icons/education.png" alt="Education" className="navbar-icon" />
             </Link>
             <Link to="/experience" className="navbar-link" title="Experience">
-              💼
+              <img src="/icons/experience.png" alt="Experience" className="navbar-icon" />
             </Link>
             <Link to="/contact" className="navbar-link" title="Contact">
-              📧
+              <img src="/icons/contact.png" alt="Contact" className="navbar-icon" />
             </Link>
-          </div>
-          
-          <div className="navbar-divider">|</div>
-          
-          <div className="navbar-right">
-            <a href="/Parvez Akhtar resume.pdf" className="navbar-link" title="Resume" target="_blank">
-              📄
-            </a>
-            <a href="https://github.com/Parvez-Akhtar-codes" className="navbar-link" title="GitHub" target="_blank">
-              🔗
-            </a>
-            <a href="https://www.linkedin.com/in/parvezakhtar02/" className="navbar-link" title="LinkedIn" target="_blank">
-              💼
-            </a>
-            <a href="https://x.com/parvezsure" className="navbar-link" title="Twitter" target="_blank">
-              🐦
-            </a>
           </div>
         </div>
       </div>

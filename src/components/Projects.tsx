@@ -7,7 +7,6 @@ const Projects = () => {
       id: 1,
       title: 'Spring Boot E-Commerce API',
       description: '🚧 Work in Progress - A robust RESTful e-commerce backend built with Spring Boot, featuring JWT authentication, payment integration, and comprehensive admin panel. Implementing clean architecture with proper validation and error handling.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
       technologies: ['Java', 'Spring Boot', 'Spring Security', 'MySQL', 'JWT', 'Maven'],
       liveUrl: '#',
       githubUrl: 'https://github.com/Parvez-Akhtar-codes/spring-ecommerce-api',
@@ -18,7 +17,6 @@ const Projects = () => {
       id: 2,
       title: 'Microservices Banking System',
       description: '🚧 Coming Soon - A distributed banking application using microservices architecture with Spring Cloud, featuring account management, transaction processing, and real-time notifications.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
       technologies: ['Java', 'Spring Cloud', 'Docker', 'PostgreSQL', 'RabbitMQ', 'Eureka'],
       liveUrl: '#',
       githubUrl: 'https://github.com/Parvez-Akhtar-codes/banking-microservices',
@@ -29,7 +27,6 @@ const Projects = () => {
       id: 3,
       title: 'Library Management System',
       description: '🚧 In Development - A comprehensive library management system with book cataloging, member management, and automated fine calculation using Java Swing and MySQL.',
-      image: '/api/placeholder/600/400',
       technologies: ['Java', 'Swing', 'MySQL', 'JDBC', 'Maven'],
       liveUrl: '#',
       githubUrl: 'https://github.com/Parvez-Akhtar-codes/library-management',
@@ -40,7 +37,6 @@ const Projects = () => {
       id: 4,
       title: 'Real-time Chat Application',
       description: '🚧 Coming Soon - A multi-threaded chat application using Java sockets with group chat functionality, file sharing, and user authentication.',
-      image: '/api/placeholder/600/400',
       technologies: ['Java', 'Socket Programming', 'Multithreading', 'JavaFX', 'MySQL'],
       liveUrl: '#',
       githubUrl: 'https://github.com/Parvez-Akhtar-codes/java-chat-app',
@@ -51,7 +47,6 @@ const Projects = () => {
       id: 5,
       title: 'Student Management Portal',
       description: '🚧 Work in Progress - A web-based student management system with Spring MVC, featuring attendance tracking, grade management, and parent-teacher communication.',
-      image: '/api/placeholder/600/400',
       technologies: ['Java', 'Spring MVC', 'Hibernate', 'MySQL', 'Bootstrap', 'Thymeleaf'],
       liveUrl: '#',
       githubUrl: 'https://github.com/Parvez-Akhtar-codes/student-portal',
@@ -62,7 +57,6 @@ const Projects = () => {
       id: 6,
       title: 'RESTful Blog API',
       description: '🚧 Coming Soon - A comprehensive blog API with CRUD operations, user roles, comment system, and image upload functionality built with Spring Boot.',
-      image: '/api/placeholder/600/400',
       technologies: ['Java', 'Spring Boot', 'JPA', 'PostgreSQL', 'JWT', 'Swagger'],
       liveUrl: '#',
       githubUrl: 'https://github.com/Parvez-Akhtar-codes/blog-api',
@@ -88,28 +82,29 @@ const Projects = () => {
 
           {/* Featured Projects */}
           <div className="featured-projects">
-            {featuredProjects.map((project, index) => (
+            {featuredProjects.map((project) => (
               <div
                 key={project.id}
-                className={`featured-project ${index % 2 === 1 ? 'reverse' : ''}`}
+                className="featured-project-card"
               >
-                <div className="project-image">
-                  <img src={project.image} alt={project.title} />
-                  <div className="project-overlay">
+                <div className="project-content">
+                  <div className="project-header">
+                    <h3>{project.title}</h3>
                     <div className="project-links">
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                        <Eye size={20} />
-                        <span>Live Demo</span>
-                      </a>
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
                         <Github size={20} />
-                        <span>Code</span>
                       </a>
+                      {project.liveUrl !== '#' ? (
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-link">
+                          <ExternalLink size={20} />
+                        </a>
+                      ) : (
+                        <span className="project-link disabled">
+                          <Eye size={20} />
+                        </span>
+                      )}
                     </div>
                   </div>
-                </div>
-                <div className="project-content">
-                  <h3>{project.title}</h3>
                   <p>{project.description}</p>
                   <div className="project-technologies">
                     {project.technologies.map((tech, techIndex) => (

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, FileText } from 'lucide-react';
 import React from 'react'; // Import React for FC type
 import './Hero.css';
 
@@ -31,7 +31,12 @@ const Hero: React.FC = () => {
 
         <div className="hero-actions">
           <a href="mailto:parvezakhtar310@gmail.com" className="btn btn-primary">
+            <Mail size={18} />
             Get in touch
+          </a>
+          <a href="/Parvez Akhtar resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+            <FileText size={18} />
+            View Resume
           </a>
         </div>
 
