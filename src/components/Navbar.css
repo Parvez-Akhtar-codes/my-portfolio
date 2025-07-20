@@ -1,6 +1,6 @@
 .navbar {
   position: fixed;
-  top: 2rem;
+  top: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -102,7 +102,7 @@
 
 @media (max-width: 768px) {
   .navbar {
-    top: 1.5rem;
+    top: 1.8rem;
     left: 0.5rem;
     right: 0.5rem;
     transform: none;
@@ -152,7 +152,7 @@
     padding: 0.3rem 0.6rem;
     left: 0.3rem;
     right: 0.3rem;
-    top: 1.2rem;
+    top: 1.4rem;
     border-radius: 18px;
   }
   
@@ -191,7 +191,7 @@
     padding: 0.25rem 0.5rem;
     left: 0.2rem;
     right: 0.2rem;
-    top: 1rem;
+    top: 1.2rem;
     border-radius: 16px;
   }
   
