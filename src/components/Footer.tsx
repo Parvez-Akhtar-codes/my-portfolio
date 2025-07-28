@@ -1,4 +1,4 @@
-import { Heart } from 'lucide-react'
+// import { Heart } from 'lucide-react'
 import './Footer.css'
 
 const Footer = () => {
