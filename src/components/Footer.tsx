@@ -9,14 +9,14 @@ const Footer = () => {
           <p className="footer-text">
             Developed by{' '}
             <a 
-              href="https://twitter.com/your-twitter-handle" 
+              href="https://x.com/parvez_codez" 
               target="_blank" 
               rel="noopener noreferrer"
               className="footer-link"
             >
               Parvez
             </a>
-            <Heart className="heart-icon" size={16} />
+           
           </p>
         </div>
       </div>

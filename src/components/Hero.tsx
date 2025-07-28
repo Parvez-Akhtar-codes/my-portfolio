@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             <Linkedin size={20} />
           </a>
           <a
-            href="https://x.com/parvezsure"
+            href="https://x.com/parvez_codez"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"

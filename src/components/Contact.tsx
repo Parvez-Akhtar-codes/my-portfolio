@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: <Twitter size={24} />,
       name: 'Twitter',
-      url: 'https://x.com/parvezsure'
+      url: 'https://x.com/parvez_codez'
     }
   ]
 
